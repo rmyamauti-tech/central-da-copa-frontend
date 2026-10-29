@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b120e">
+  <title>Central da Copa | Seu especialista em Copas do Mundo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="container">
+
+    <!-- CABEÇALHO -->
+    <header class="topo">
+      <a class="marca" href="#" aria-label="Central da Copa">
+        <span class="marca-icone">⚽</span>
+        <span>CENTRAL <strong>DA COPA</strong></span>
+      </a>
+
+      <span class="status">
+        <span class="status-ponto"></span>
+        ESPECIALISTA ONLINE
+      </span>
+    </header>
+
+    <!-- APRESENTAÇÃO -->
+    <section class="hero">
+      <span class="etiqueta">A ENCICLOPÉDIA DO FUTEBOL</span>
+
+      <h1>O mundo inteiro<br>em <span>90 minutos.</span></h1>
+
+      <p>
+        Histórias, recordes, craques e curiosidades de todas as Copas
+        do Mundo. Pergunte e descubra.
+      </p>
+    </section>
+
+    <!-- PERGUNTAS SUGERIDAS -->
+    <section class="sugestoes" aria-label="Perguntas sugeridas">
+      <div class="sugestoes-cabecalho">
+        <span class="etiqueta">EXPLORE AS COPAS</span>
+        <span class="sugestoes-dica">Escolha um tema para começar</span>
+      </div>
+
+      <div class="sugestoes-lista">
+        <button
+          type="button"
+          class="sugestao"
+          data-pergunta="Quantas Copas do Mundo o Brasil ganhou?"
+        >
+          <span class="sugestao-icone">🏆</span>
+          <span>Os títulos do Brasil</span>
+          <span class="sugestao-seta">↗</span>
+        </button>
+
+        <button
+          type="button"
+          class="sugestao"
+          data-pergunta="Quem são os maiores artilheiros da história das Copas do Mundo?"
+        >
+          <span class="sugestao-icone">⚽</span>
+          <span>Maiores artilheiros</span>
+          <span class="sugestao-seta">↗</span>
+        </button>
+
+        <button
+          type="button"
+          class="sugestao"
+          data-pergunta="Conte curiosidades sobre a final da Copa do Mundo de 2002."
+        >
+          <span class="sugestao-icone">📚</span>
+          <span>Histórias inesquecíveis</span>
+          <span class="sugestao-seta">↗</span>
+        </button>
+
+        <button
+          type="button"
+          class="sugestao"
+          data-pergunta="Quais seleções venceram mais Copas do Mundo masculinas?"
+        >
+          <span class="sugestao-icone">🌍</span>
+          <span>Seleções campeãs</span>
+          <span class="sugestao-seta">↗</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ÁREA DO CHAT -->
+    <section class="chat" aria-label="Conversa com o especialista">
+
+      <div class="chat-cabecalho">
+        <div class="avatar">⚽</div>
+
+        <div>
+          <h2>Especialista da Copa</h2>
+          <p>Pronto para entrar em campo</p>
+        </div>
+
+        <span class="chat-online">● ONLINE</span>
+      </div>
+
+      <!-- MENSAGENS -->
+      <div
+        id="mensagens"
+        class="mensagens"
+        aria-live="polite"
+        aria-label="Mensagens da conversa"
+      >
+        <div class="mensagem mensagem-bot">
+          <div class="mensagem-avatar">⚽</div>
+
+          <div class="mensagem-conteudo">
+            <span class="mensagem-autor">CENTRAL DA COPA</span>
+
+            <div class="mensagem-texto">
+              Fala, torcedor! 🏆 Estou pronto para falar sobre a história
+              das Copas, seleções, craques e recordes. Qual é a sua pergunta?
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FORMULÁRIO DE ENVIO -->
+      <form id="formulario-chat" class="formulario-chat">
+        <label class="campo-label" for="campo-pergunta">
+          SUA PERGUNTA
+        </label>
+
+        <div class="campo-container">
+          <textarea
+            id="campo-pergunta"
+            name="pergunta"
+            placeholder="Ex.: Quem fez mais gols em Copas?"
+            rows="1"
+            required
+          ></textarea>
+
+          <button
+            id="botao-enviar"
+            type="submit"
+            aria-label="Enviar pergunta"
+          >
+            <span>Enviar</span>
+            <span aria-hidden="true">↗</span>
+          </button>
+        </div>
+
+        <p class="aviso">
+          ⚡ Respostas geradas por inteligência artificial. Confira dados
+          históricos importantes.
+        </p>
+      </form>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+      <span>⚽ FEITO PARA QUEM AMA FUTEBOL</span>
+      <span>CENTRAL DA COPA © 2026</span>
+    </footer>
+
+  </main>
+
+  <!-- JAVASCRIPT DO CHAT -->
+  <script src="./script.js"></script>
+</body>
+</html>
